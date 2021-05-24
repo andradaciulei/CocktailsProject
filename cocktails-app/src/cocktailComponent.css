@@ -1,0 +1,12 @@
+img.small-image {
+  width: 200px;
+  height: 200px;
+}
+
+.cocktail-container {
+  margin: 0px 40px 40px 0px;
+}
+
+p{
+  cursor: pointer;
+}

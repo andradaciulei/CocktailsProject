@@ -1,0 +1,79 @@
+.page-title {
+  text-align: center;
+  background-color: pink;
+  margin: 0px;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 30%;
+  align-self: center;
+  margin: 30px;
+  border: 1px solid black;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.separator-line {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.separator-line > span {
+  position: relative;
+  display: inline-block;
+}
+
+.separator-line > span:before,
+.separator-line > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: black;
+}
+
+.separator-line > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.separator-line > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.cocktails-list-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.block-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.smaller-container {
+  width: 60%;
+}
+p {
+  text-align: center;
+}
+button {
+  align-self: flex-start;
+  margin-left: 40px;
+  padding: 10px 40px;
+  margin-top: 40px;
+}
+
