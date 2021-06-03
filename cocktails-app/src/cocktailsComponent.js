@@ -42,7 +42,7 @@ const CocktailsComponent = (props) => {
         <CocktailComponent key={cocktail.idDrink} {...cocktail} category={category} />
     );
 
-    return ({ cocktailsList });
+    return (<>{ cocktailsList }</>);
 
 }
 

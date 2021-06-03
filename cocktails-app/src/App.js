@@ -32,7 +32,6 @@ function App() {
         <Switch>
           <Route path={`/cocktails/:category/details/:id`} component={CocktailDetailsComponent}></Route>
           <Route path="/cocktails/:category" component={CocktailsComponent} />
-          <Route />
         </Switch>
       </BrowserRouter>
     </div>
