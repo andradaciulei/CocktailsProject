@@ -1,7 +1,6 @@
-import { React, Component } from 'react';
+import { React } from 'react';
 import CocktailComponent from './cocktailComponent';
 import './cocktailsComponent.css';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
@@ -43,13 +42,7 @@ const CocktailsComponent = (props) => {
         <CocktailComponent key={cocktail.idDrink} {...cocktail} category={category} />
     );
 
-    return <>
-
-
-        {cocktailsList}
-
-
-    </>
+    return ({ cocktailsList });
 
 }
 

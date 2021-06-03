@@ -1,7 +1,5 @@
 import './menuComponent.css';
 import { Link } from 'react-router-dom';
-// import COCKTAIL_CATEGORIES from './constants/cocktail-categories-list';
-
 
 const MenuComponent = (props) => {
     return <div className="menu">

@@ -1,8 +1,8 @@
-// import { React, Component } from 'react';
+
 import './cocktailDetailsComponent.css';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
-import { BrowserRouter, Route, Switch, Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 
