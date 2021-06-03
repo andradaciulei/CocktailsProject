@@ -1,19 +1,19 @@
-import { React, Component } from 'react';
+import { React } from 'react';
 import './cocktailComponent.css';
+import { Link } from 'react-router-dom';
 
-class CocktailComponent extends Component {
-    handleClick = (valueClicked) => {
-        this.props.onCocktailClicked(this.props, valueClicked);
-    }
 
-    render() {
-        return (
-            <div className="cocktail-container">
-                <img className="small-image" onClick={() => this.handleClick('image')} src={this.props.image} alt="Cocktail"></img>
-                <p onClick={() => this.handleClick('name')}>{this.props.name}</p>
-            </div>
-        );
-    }
+const CocktailComponent = (props) => {
+    return (
+        <div className="cocktail-container">
+            <img className="small-image" src={props.strDrinkThumb} alt="Cocktail"></img>
+            <p>{props.strDrink}</p>
+            <Link to={`/cocktails/${props.category}/details/${props.idDrink}`} className="btn btn-primary btn-details">
+                See more details
+            </Link>
+        </div>
+    );
+
 }
 
 export default CocktailComponent;

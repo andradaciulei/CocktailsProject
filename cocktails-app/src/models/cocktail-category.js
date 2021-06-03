@@ -1,7 +1,7 @@
 class CocktailCategory {
-    constructor(name, cocktailsList) {
+    constructor(name, id) {
         this.name = name;
-        this.cocktailsList = cocktailsList;
+        this.id = id;
     }
 }
 
